@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moje Portfolio</title>
+  <!-- Ikony Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      background: url("assets/tlo.png") no-repeat center center fixed;
+      background-size: cover;
+      font-family: sans-serif;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      scroll-snap-align: start;
+      flex-direction: column;
+    }
+
+    main {
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+      height: 100vh;
+    }
+
+    img, video {
+      max-width: 90%;
+      max-height: 90vh;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    }
+
+    video {
+      background: #000;
+    }
+
+    /* Pasek boczny */
+    .sidebar {
+      position: fixed;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 1100;
+    }
+
+    .sidebar a {
+      color: white;
+      font-size: 24px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .sidebar a:hover {
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Pasek boczny z ikonami -->
+  <div class="sidebar">
+    <a href="https://www.instagram.com/godstaruch" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/rafa-janko" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:rafajankokomiksy@email.com"><i class="fas fa-envelope"></i></a>
+    <a href="tel:+48796090076"><i class="fas fa-phone"></i></a>
+  </div>
+
+  <main>
+    <!-- Strony 1-35 (obrazy) -->
+    <section id="page1"><img src="assets/page1.jpg" alt="Strona 1"></section>
+    <section id="page2"><img src="assets/page2.jpg" alt="Strona 2"></section>
+    <section id="page3"><img src="assets/page3.jpg" alt="Strona 3"></section>
+    <section id="page4"><img src="assets/page4.jpg" alt="Strona 4"></section>
+    <section id="page5"><img src="assets/page5.jpg" alt="Strona 5"></section>
+    <section id="page6"><img src="assets/page6.jpg" alt="Strona 6"></section>
+    <section id="page7"><img src="assets/page7.jpg" alt="Strona 7"></section>
+    <section id="page8"><img src="assets/page8.jpg" alt="Strona 8"></section>
+    <section id="page9"><img src="assets/page9.jpg" alt="Strona 9"></section>
+    <section id="page10"><img src="assets/page10.jpg" alt="Strona 10"></section>
+    <section id="page11"><img src="assets/page11.jpg" alt="Strona 11"></section>
+    <section id="page12"><img src="assets/page12.jpg" alt="Strona 12"></section>
+    <section id="page13"><img src="assets/page13.jpg" alt="Strona 13"></section>
+    <section id="page14"><img src="assets/page14.jpg" alt="Strona 14"></section>
+    <section id="page15"><img src="assets/page15.jpg" alt="Strona 15"></section>
+    <section id="page16"><img src="assets/page16.jpg" alt="Strona 16"></section>
+    <section id="page17"><img src="assets/page17.jpg" alt="Strona 17"></section>
+    <section id="page18"><img src="assets/page18.jpg" alt="Strona 18"></section>
+    <section id="page19"><img src="assets/page19.jpg" alt="Strona 19"></section>
+    <section id="page20"><img src="assets/page20.jpg" alt="Strona 20"></section>
+    <section id="page21"><img src="assets/page21.jpg" alt="Strona 21"></section>
+    <section id="page22"><img src="assets/page22.jpg" alt="Strona 22"></section>
+    <section id="page23"><img src="assets/page23.jpg" alt="Strona 23"></section>
+    <section id="page24"><img src="assets/page24.jpg" alt="Strona 24"></section>
+    <section id="page25"><img src="assets/page25.jpg" alt="Strona 25"></section>
+    <section id="page26"><img src="assets/page26.jpg" alt="Strona 26"></section>
+    <section id="page27"><img src="assets/page27.jpg" alt="Strona 27"></section>
+    <section id="page28"><img src="assets/page28.jpg" alt="Strona 28"></section>
+    <section id="page29"><img src="assets/page29.jpg" alt="Strona 29"></section>
+    <section id="page30"><img src="assets/page30.jpg" alt="Strona 30"></section>
+    <section id="page31"><img src="assets/page31.jpg" alt="Strona 31"></section>
+    <section id="page32"><img src="assets/page32.jpg" alt="Strona 32"></section>
+    <section id="page33"><img src="assets/page33.jpg" alt="Strona 33"></section>
+    <section id="page34"><img src="assets/page34.jpg" alt="Strona 34"></section>
+    <section id="page35"><img src="assets/page35.jpg" alt="Strona 35"></section>
+
+    <!-- Strona 36 (WIDEO 1) -->
+    <section id="page36">
+      <video controls>
+        <source src="assets/video1.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <!-- Strona 37 (obraz) -->
+    <section id="page37"><img src="assets/page37.png" alt="Strona 37"></section>
+
+    <!-- Strona 38 (WIDEO 2) -->
+    <section id="page38">
+      <video controls>
+        <source src="assets/video2.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <!-- Strona 39 (obraz) -->
+    <section id="page39"><img src="assets/page39.png" alt="Strona 39"></section>
+  </main>
+
+</body>
+</html>
